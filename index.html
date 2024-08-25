@@ -1,201 +1,251 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>B10A3 Assignment</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>B10A3 Assignment</title>
 
-    <!-- Google font link -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <!-- Google font link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 
-    <!-- Font awesome cdn link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Font awesome cdn link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- link Tailwing and DaisyUI -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+  <!-- link Tailwing and DaisyUI -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Tailwing css configuration -->
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                gradient: '#FFFFFF',
-                arrow:'#ABEF5F',
-                text_ash: '#737373',
-              },
-              fontFamily: {
-                manrope: 'Manrope',
-              }
-            }
+  <!-- Tailwing css configuration -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            gradient: '#FFFFFF',
+            arrow: '#ABEF5F',
+            text_ash: '#737373',
+          },
+          fontFamily: {
+            manrope: 'Manrope',
           }
         }
-      </script>
+      }
+    }
+  </script>
 </head>
 
 <body class="font-manrope">
-<!-- Header Started -->
-    <header class="bg-gradient-to-b from-gray-300 to-transparent lg:mb-16 mb-10">
-        <!-- Nav-bar started -->
-        <nav class="w-11/12 mx-auto">
-            <div class="navbar">
-            <!-- nav start portion -->
-                <div class="navbar-start w-96">
-                  <a href="#" class="text-xl font-bold"><span><i class="fa-solid fa-arrow-right bg-arrow rounded-full p-1 -rotate-45"></i></span> Rinterio</a>
-                </div>
-            <!-- nav center portion -->
-                <div class="navbar-center hidden lg:flex h-7">
-                  <ul class="menu menu-horizontal px-1 text-sm">
-                    <li class="hover:text-blue-700 font-medium"><a>Home</a></li>
-                    <li class="text-text_ash hover:text-blue-500"><a>Services</a></li>
-                    <li class="text-text_ash hover:text-blue-500"><a>Portfolio</a></li>
-                    <li class="text-text_ash hover:text-blue-500"><a>Blogs</a></li>
-                    <li class="text-text_ash hover:text-blue-500"><a>Contact Us</a></li>
-                  </ul>
-                </div>
-            <!-- nav end portion -->
-                <div class="navbar-end">
-                  <div class="flex gap-3">
-                    <!-- search icon -->
-                    <div class="hidden md:block lg:block">
-                      <button class="btn btn-sm btn-ghost btn-circle bg-white">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          class="h-5 w-5"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor">
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                        </svg>
-                      </button>
-                    </div>
-                    <!-- shopping card -->
-                    <div class="hidden md:block lg:block">
-                    <button class="btn btn-sm btn-ghost btn-circle bg-white">
-                      <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="h-5 w-5"
-                      fill="white"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor">
-                      <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-                      </svg>
-                    </div>
-                    <!-- Book consult button -->
-                    <div class="hidden md:block lg:block w-36">
-                      <a class="btn btn-sm bg-arrow rounded-full border-none py-0 text-sm font-bold">Book Consult <span><i class="fa-solid fa-arrow-right bg-black rounded-full p-1 -rotate-45 text-white"></i></span></a>
-                    </div>
-                  </div>
-                  <!-- dropdown start -->
-                  <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                      <i class="fa-solid fa-bars bg-white p-2 rounded-full"></i>
-                    </div>
-                    <ul
-                      tabindex="0"
-                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow  right-0 gap-2">
-                      <li class="hover:text-blue-700 font-medium"><a>Home</a></li>
-                      <li class="text-text_ash hover:text-blue-500"><a>Services</a></li>
-                      <li class="text-text_ash hover:text-blue-500"><a>Portfolio</a></li>
-                      <li class="text-text_ash hover:text-blue-500"><a>Blogs</a></li>
-                      <li class="text-text_ash hover:text-blue-500"><a>Contact Us</a></li>
-                    </ul>
-                  </div>
+  <!-- Header Started -->
+  <header class="bg-gradient-to-b from-gray-300 to-transparent lg:mb-16 mb-10">
+    <!-- Nav-bar started -->
+    <nav class="w-11/12 mx-auto">
+      <div class="navbar">
+        <!-- nav start portion -->
+        <div class="navbar-start">
+          <a href="#" class="text-xl font-bold"><span><i
+                class="fa-solid fa-arrow-right bg-arrow rounded-full p-1 -rotate-45"></i></span> Rinterio</a>
+        </div>
+        <!-- nav center portion -->
+        <div class="navbar-center hidden lg:flex h-7">
+          <ul class="menu menu-horizontal px-1 text-sm">
+            <li class="hover:text-blue-700 font-medium"><a>Home</a></li>
+            <li class="text-text_ash hover:text-blue-500"><a>Services</a></li>
+            <li class="text-text_ash hover:text-blue-500"><a>Portfolio</a></li>
+            <li class="text-text_ash hover:text-blue-500"><a>Blogs</a></li>
+            <li class="text-text_ash hover:text-blue-500"><a>Contact Us</a></li>
+          </ul>
+        </div>
+        <!-- nav end portion -->
+        <div class="navbar-end">
+          <div class="flex gap-3">
+            <!-- search icon -->
+            <div class="hidden md:block lg:block">
+              <button class="btn btn-sm btn-ghost btn-circle bg-white">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+              </button>
+            </div>
+            <!-- shopping card -->
+            <div class="hidden md:block lg:block">
+              <button class="btn btn-sm btn-ghost btn-circle bg-white">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="white" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+            </div>
+            <!-- Book consult button -->
+            <div class="hidden md:block lg:block w-36">
+              <a class="btn btn-sm bg-arrow rounded-full border-none py-0 text-sm font-bold">Book Consult <span><i
+                    class="fa-solid fa-arrow-right bg-black rounded-full p-1 -rotate-45 text-white"></i></span></a>
+            </div>
+          </div>
+          <!-- dropdown start -->
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <i class="fa-solid fa-bars bg-white p-2 rounded-full"></i>
+            </div>
+            <ul tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow  right-0 gap-2">
+              <li class="hover:text-blue-700 font-medium"><a>Home</a></li>
+              <li class="text-text_ash hover:text-blue-500"><a>Services</a></li>
+              <li class="text-text_ash hover:text-blue-500"><a>Portfolio</a></li>
+              <li class="text-text_ash hover:text-blue-500"><a>Blogs</a></li>
+              <li class="text-text_ash hover:text-blue-500"><a>Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Header-content section start  -->
+    <div>
+      <div class="hero w-11/12 mx-auto">
+        <div class="text-center w-8/12">
+          <div class="lg:w-4/12 mx-auto">
+            <img src="./images/banner.png" alt="">
+          </div>
+          <h1 class="text-4xl font-extrabold mt-5">A barn house of this design has a
+            <br> striking appearance
+          </h1>
+          <p class="py-5 text-text_ash text-sm">
+            The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered
+            wood, sleek metal accents, and large windows that flood the space with natural light.
+          </p>
+          <a class="btn btn-sm bg-lime-200 rounded-full border-none py-0 text-sm font-bold w-full lg:w-36">View Details
+            <span><i class="fa-solid fa-arrow-right bg-arrow rounded-full p-1 -rotate-45 text-black"></i></span></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Started -->
+  <main>
+    <!-- Secton: We design thoughtful -->
+    <section>
+      <div class="bg-base-200">
+
+        <div class="relative hero w-11/12 mx-auto lg:py-16 sm:py-14 hero-content flex-col lg:flex-row">
+           <!-- vector graphic -->
+        <div class="absolute left-2 top-4 hidden lg:block">
+        <img src="./images/Vector.png" alt="">
+        </div>
+          <!-- section left side text -->
+          <div class="flex-1">
+            <!-- about button -->
+            <div class="lg:text-start text-center">
+              <button class="bg-white font-semibold px-3 rounded-full mb-4"><span class="pr-1"><i
+                    class="fa-solid fa-arrow-right"></i></span> About Us</button>
+            </div>
+            <!-- text portion -->
+            <div class="text-center lg:text-left">
+              <h1 class="text-3xl font-extrabold">We design thoughtful, <br>liveable spaces</h1>
+              <p class="py-7 text-sm text-text_ash">
+                We design our houses according to the situation and place. Commercial and residential houses are
+                different in looks, decorations & facilities.
+              </p>
+            </div>
+
+            <div class="sm:flex-none md:flex lg:flex-col gap-2">
+            <!-- commercial div -->
+            <div class="hero bg-white m-0 p-0 rounded-lg">
+              <div class="hero-content flex-row lg:flex-row">
+                <img src="./images/commercial.png" class="max-w-sm rounded-lg shadow-2xl" />
+                <div>
+                  <h1 class="text-lg font-bold">Commercial</h1>
+                  <p class="py-1 text-sm text-text_ash">
+                    Commercial buildings are build beside the road. It has wide parking area and multiple elevators.
+                  </p>
                 </div>
               </div>
-        </nav>
-        <!-- Header-content section start  -->
-        <div>
-          <div class="hero w-11/12 mx-auto">
-            <div class="text-center w-8/12">
-              <div class="lg:w-4/12 mx-auto">
-                <img src="./images/banner.png" alt="">
+            </div >
+            <!-- Residential div -->
+            <div class="hero bg-white m-0 p-0 rounded-lg mt-5">
+              <div class="hero-content flex-row lg:flex-row">
+                <img src="./images/residential.png" class="max-w-sm rounded-lg shadow-2xl" />
+                <div>
+                  <h1 class="text-lg font-bold">Residential</h1>
+                  <p class="py-1 text-sm text-text_ash">
+                    Residential buildings are in quite place. Every house has a garden in front of it. Some home has a small lobby.
+                  </p>
+                </div>
               </div>
-                <h1 class="text-4xl font-extrabold mt-5">A barn house of this design has a 
-                  <br> striking appearance</h1>
-                <p class="py-5 text-text_ash text-sm">
-                  The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
-                </p>
-                  <a class="btn btn-sm bg-lime-200 rounded-full border-none py-0 text-sm font-bold w-full lg:w-36">View Details <span><i class="fa-solid fa-arrow-right bg-arrow rounded-full p-1 -rotate-45 text-black"></i></span></a>
             </div>
           </div>
         </div>
-    </header>
-
-<!-- Main Started -->
-     <main>
-      <!-- Secton: We design thoughtful -->
-      <section>
-        <div class="bg-base-200 relative">
-          <!-- vector graphic -->
-           <div class="absolute left-8 top-5 hidden lg:block">
-            <img src="./images/Vector.png" alt="">
-           </div>
-
-            <div class="hero w-11/12 mx-auto lg:py-16 sm:py-14 hero-content flex-col lg:flex-row">
-          <!-- section left side text -->
-              <div class="flex-1">
-                <!-- about button -->
-                 <div class="lg:text-start text-center">
-                <button class="bg-white px-3 rounded-full mb-4"><span class="pr-1"><i class="fa-solid fa-arrow-right"></i></span> About Us</button>
-                 </div>
-                <!-- text portion -->
-                 <div class="text-center lg:text-left">
-                <h1 class="text-3xl font-extrabold">We design thoughtful, <br>liveable spaces</h1>
-                <p class="py-7 text-sm text-text_ash">
-                  We design our houses according to the situation and place. Commercial and residential houses are different in looks, decorations & facilities.
-                </p>
-                 </div>
-                <!-- commercial div -->
-                  <div class="hero bg-white m-0 p-0 rounded-lg">
-                    <div class="hero-content flex-row lg:flex-row">
-                      <img 
-                        src="./images/commercial.png"
-                        class="max-w-sm rounded-lg shadow-2xl" />
-                      <div>
-                        <h1 class="text-lg font-bold">Commercial</h1>
-                        <p class="py-1 text-sm text-text_ash">
-                          Commercial buildings are build beside the road. It has wide parking area and multiple elevators.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                 <!-- Residential div -->
-                 <div class="hero bg-white m-0 p-0 rounded-lg mt-5">
-                  <div class="hero-content flex-row lg:flex-row">
-                    <img 
-                      src="./images/residential.png"
-                      class="max-w-sm rounded-lg shadow-2xl" />
-                    <div>
-                      <h1 class="text-lg font-bold">Commercial</h1>
-                      <p class="py-1 text-sm text-text_ash">
-                        Residential buildings are in quite place. Every house has a garden in front of it.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
           <!-- section right side image -->
-              <div class="flex-1">
-                <img
-                src="./images/Rectangle.png"
-                class="m-auto rounded-lg shadow-2xl" />
-              </div>
-            </div>
+          <div class="flex-1">
+            <img src="./images/Rectangle.png" class="m-auto rounded-lg shadow-2xl" />
+          </div>
         </div>
-      </section>
-     </main>
-    
+      </div>
+     
+    </section>
+
+<!-- Our work process -->
+    <section>
+      <div class="bg-base-200 md:h-[870px] lg:h-[770px] py-20">
+        <!-- upper text poriton -->
+        <div class="w-11/12 mx-auto text-center">
+          <button class="bg-white font-semibold px-3 rounded-full mb-6"><span class="pr-1"><i
+                  class="fa-solid fa-arrow-right"></i></span> How we works</button>
+          <h1 class="text-3xl font-extrabold">Our Works Process</h1>
+          <p class="text-text_ash text-sm py-7">We have a good work process the build the barn house. We use computerized software to finalize the drawings and we have a good HR policy to recruit best workers. We always focus on the productivity and client satisfaction</p>
+          <!-- card div starts-->
+           
+           <div class="grid sm:grid-rows-4 md:grid-cols-2 lg:grid-cols-4 gap-3 mt-2">
+            <!-- card-1 -->
+            <div class="text-left p-5 bg-pink-300 shadow-xl space-y-2 rounded-lg">
+                <img src="./images/concept.png" alt="concept">
+                <h2 class="text-xl font-bold">Concept</h2>
+                <p>This is one of our work process. We hire the best person to make our design attractive and well arranged.</p>
+            </div>
+            <!-- card-2 -->
+            <div class="text-left p-5 bg-yellow-300 shadow-xl space-y-2 rounded-lg">
+              <img src="./images/flow-chart.png" alt="concept">
+              <h2 class="text-xl font-bold">Desing Process</h2>
+              <p>This is one of our work process. We hire the best person to make our design attractive and well arranged.</p>
+            </div>
+            <!-- card-3 -->
+            <div class="text-left p-5 bg-green-300 shadow-xl space-y-2 rounded-lg">
+              <img src="./images/vision.png" alt="concept">
+              <h2 class="text-xl font-bold">Supervision</h2>
+              <p>This is one of our work process. We hire the best person to make our design attractive and well arranged.</p>
+            </div>
+            <!-- card-4 -->
+            <div class="text-left p-5 bg-blue-300 shadow-xl space-y-2 rounded-lg">
+              <img src="./images/budget-planning.png" alt="concept">
+              <h2 class="text-xl font-bold">Budget Planning</h2>
+              <p>This is one of our work process. We hire the best person to make our design attractive and well arranged.</p>
+            </div>
+           </div>
+      </div>
+      </div>
+    </section>
+
+<!-- Our latest Portfolio -->
+    <section>
+      <div class="bg-white">
+        <div class="w-11/12 mx-auto">
+         <!-- upper text related div -->
+          <div>
+            <button class="bg-white font-semibold px-3 rounded-full mb-6"><span class="pr-1"><i
+              class="fa-solid fa-arrow-right"></i></span> Explore our Latest works</button>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
 </body>
+
 </html>
