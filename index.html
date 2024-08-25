@@ -108,8 +108,8 @@
     <!-- Header-content section start  -->
     <div>
       <div class="hero w-11/12 mx-auto">
-        <div class="text-center w-8/12">
-          <div class="lg:w-4/12 mx-auto">
+        <div class="text-center">
+          <div class="sm:w-1/12 md:w-5/12 lg:w-4/12 mx-auto">
             <img src="./images/banner.png" alt="">
           </div>
           <h1 class="text-4xl font-extrabold mt-5">A barn house of this design has a
@@ -119,7 +119,7 @@
             The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered
             wood, sleek metal accents, and large windows that flood the space with natural light.
           </p>
-          <a class="btn btn-sm bg-lime-200 rounded-full border-none py-0 text-sm font-bold w-full lg:w-36">View Details
+          <a class="btn btn-sm bg-lime-200 rounded-full border-none py-0 text-sm font-bold w-full md:w-36 lg:w-36">View Details
             <span><i class="fa-solid fa-arrow-right bg-arrow rounded-full p-1 -rotate-45 text-black"></i></span></a>
         </div>
       </div>
@@ -147,15 +147,15 @@
             <!-- text portion -->
             <div class="text-center lg:text-left">
               <h1 class="text-3xl font-extrabold">We design thoughtful, <br>liveable spaces</h1>
-              <p class="py-7 text-sm text-text_ash">
+              <p class="py-8 text-sm text-text_ash">
                 We design our houses according to the situation and place. Commercial and residential houses are
                 different in looks, decorations & facilities.
               </p>
             </div>
 
-            <div class="sm:flex-none md:flex lg:flex-col gap-2">
+            <div class="grid md:grid-cols-2 gap-3 lg:grid-cols-none">
             <!-- commercial div -->
-            <div class="hero bg-white m-0 p-0 rounded-lg">
+              <div class="bg-white m-0 p-0 rounded-lg">
               <div class="hero-content flex-row lg:flex-row">
                 <img src="./images/commercial.png" class="max-w-sm rounded-lg shadow-2xl" />
                 <div>
@@ -165,9 +165,9 @@
                   </p>
                 </div>
               </div>
-            </div >
+              </div >
             <!-- Residential div -->
-            <div class="hero bg-white m-0 p-0 rounded-lg mt-5">
+              <div class="bg-white m-0 p-0 rounded-lg">
               <div class="hero-content flex-row lg:flex-row">
                 <img src="./images/residential.png" class="max-w-sm rounded-lg shadow-2xl" />
                 <div>
@@ -177,7 +177,7 @@
                   </p>
                 </div>
               </div>
-            </div>
+              </div>
           </div>
         </div>
           <!-- section right side image -->
@@ -191,41 +191,44 @@
 
 <!-- Our work process -->
     <section>
-      <div class="bg-base-200 md:h-[870px] lg:h-[770px] py-20">
+      <!-- md:h-[870px] lg:h-[770px] -->
+      <div class="bg-base-200 py-20">
+      <div class="w-11/12 mx-auto text-center">
         <!-- upper text poriton -->
-        <div class="w-11/12 mx-auto text-center">
+          <div class="text-center">
           <button class="bg-white font-semibold px-3 rounded-full mb-6"><span class="pr-1"><i
                   class="fa-solid fa-arrow-right"></i></span> How we works</button>
           <h1 class="text-3xl font-extrabold">Our Works Process</h1>
           <p class="text-text_ash text-sm py-7">We have a good work process the build the barn house. We use computerized software to finalize the drawings and we have a good HR policy to recruit best workers. We always focus on the productivity and client satisfaction</p>
+          </div>
           <!-- card div starts-->
-           
-           <div class="grid sm:grid-rows-4 md:grid-cols-2 lg:grid-cols-4 gap-3 mt-2">
+          <!-- grid sm:grid-rows-4 md:grid-cols-2 lg:grid-cols-4 gap-3 mt-2 -->
+           <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
             <!-- card-1 -->
-            <div class="text-left p-5 bg-pink-300 shadow-xl space-y-2 rounded-lg">
+                <div class="text-left p-5 bg-pink-300 shadow-xl space-y-2 rounded-lg">
                 <img src="./images/concept.png" alt="concept">
                 <h2 class="text-xl font-bold">Concept</h2>
                 <p>This is one of our work process. We hire the best person to make our design attractive and well arranged.</p>
-            </div>
+                </div>
             <!-- card-2 -->
-            <div class="text-left p-5 bg-yellow-300 shadow-xl space-y-2 rounded-lg">
-              <img src="./images/flow-chart.png" alt="concept">
-              <h2 class="text-xl font-bold">Desing Process</h2>
-              <p>This is one of our work process. We hire the best person to make our design attractive and well arranged.</p>
-            </div>
+                <div class="text-left p-5 bg-yellow-300 shadow-xl space-y-2 rounded-lg">
+               <img src="./images/flow-chart.png" alt="concept">
+               <h2 class="text-xl font-bold">Desing Process</h2>
+                <p>This is one of our work process. We hire the best person to make our design attractive and well arranged.</p>
+                </div>
             <!-- card-3 -->
-            <div class="text-left p-5 bg-green-300 shadow-xl space-y-2 rounded-lg">
+              <div class="text-left p-5 bg-green-300 shadow-xl space-y-2 rounded-lg">
               <img src="./images/vision.png" alt="concept">
               <h2 class="text-xl font-bold">Supervision</h2>
               <p>This is one of our work process. We hire the best person to make our design attractive and well arranged.</p>
-            </div>
+              </div>
             <!-- card-4 -->
-            <div class="text-left p-5 bg-blue-300 shadow-xl space-y-2 rounded-lg">
+              <div class="text-left p-5 bg-blue-300 shadow-xl space-y-2 rounded-lg">
               <img src="./images/budget-planning.png" alt="concept">
               <h2 class="text-xl font-bold">Budget Planning</h2>
               <p>This is one of our work process. We hire the best person to make our design attractive and well arranged.</p>
-            </div>
-           </div>
+              </div>
+          </div>
       </div>
       </div>
     </section>
